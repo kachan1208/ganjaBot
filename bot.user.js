@@ -26,7 +26,7 @@ function main()
 	{
 		var interval = Math.floor(Math.random() * (20000 - 1000 + 1)) + 1000;
 		console.log(interval);
-		// clearInterval(main);
+		clearInterval(main);
 		setInterval(findBattle, interval);
 	}
 }
