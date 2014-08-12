@@ -14,4 +14,4 @@ function findBattle() {
 
 var interval = Math.floor(Math.random() * (7000 - 4000 + 1)) + 4000;
 console.log(interval);
-setInterval(interval, findBattle());
+setInterval(findBattle, interval);

@@ -24,10 +24,10 @@ function main()
 	currentHp = hp_current;
 	if (hpToBattle <= currentHp)
 	{
-		var interval = Math.floor(Math.random() * (2000 - 1000 + 1)) + 1000;
+		var interval = Math.floor(Math.random() * (20000 - 1000 + 1)) + 1000;
 		console.log(interval);
 		// clearInterval(main);
-		setInterval(interval, findBattle());
+		setInterval(findBattle, interval);
 	}
 }
 
