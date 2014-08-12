@@ -32,8 +32,7 @@ function main()
 }
 
 var percentToBattle = Math.floor(Math.random() * (100 - 83 + 1)) + 83;
-console.log(percentToBattle);
 var fullHp = hp_max;
 var currentHp = hp_current;
-var hpToBattle = fullHp / 100 * 83;  
+var hpToBattle = fullHp / 100 * percentToBattle;  
 var main = setInterval(main, 1000);

@@ -10,4 +10,5 @@ function openMain()
 	window.open("http://www.ganjawars.ru/me/", "_self");	
 }
 
-setInterval(openMain, 4000);
+var interval = Math.random() * (4000 - 1000) + 1000; 
+setInterval(openMain, interval);
