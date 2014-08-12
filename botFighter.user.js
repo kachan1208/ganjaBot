@@ -10,11 +10,19 @@
 function voidUpdate()
 {
 	var button = document.getElementById("movego");
-	
-	if(button != null)
+	var grenade = document.getElementById("bagaboom"); 
+
+	if (button != null)
+	{
+		if (grenade != null)
+			grenade.checked = true;
+
 		fight();
+	}
 	else
 		updatedata();
 }
-setInterval(voidUpdate, 5000);
+
+var interval = Math.random() * (7000 - 3000) + 3000;
+setInterval(voidUpdate, interval);
 
